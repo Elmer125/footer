@@ -14,11 +14,12 @@ a{
 .container{
     background-color: #4a86e8;
     width: 100%;
-    height: 50px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 100px;
+    border: 1px solid;
 }
 .centrar{
     display: flex;
@@ -37,9 +38,11 @@ a{
     justify-content: center;
     gap:50px;
     margin-top: 10px;
+    
 }
 .direccion{
     padding-top: 25px;
+
 }
 .foterinfo{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -51,7 +54,8 @@ a{
     display: flex;
     margin-top: 9px;
     justify-content: center;
-    gap:27px
+    gap:27px;
+    text-align:center;
 }
 .ffooter{
     display: flex;
@@ -61,8 +65,54 @@ a{
     background: #E83191;
     gap:100px;
     height:20px ;
-
+    border: 1px solid;
 }
 .pequeña{
     font-size: 12px;
+}
+
+
+@media (max-width:700px){
+   .md{
+       flex-direction: column;
+       align-items: center;
+   }
+    .direccion{
+        padding-top:0px ;
+        text-align:center;
+    }
+    .foterinf{
+        margin-top:0px  ;
+        margin-bottom: 0px ;
+    }
+
+    .arriba{
+        margin-top: 0px ;
+    }
+    .tamañoimage{
+        width: 7% !important;
+        height: 7% !important;
+    }
+
+
+}
+
+@media (min-width:701px){
+    .tamañoimage{
+        width: 5% !important;
+        height: 5% !important;
+    }
+}
+
+@media (min-width:1200px){
+    .tamañoimage{
+        width: 4% !important;
+        height: 4% !important;
+    }
+}
+@media (min-width:1270px){
+    .tamañoimage{
+        width: 3% !important;
+        height: 3% !important;
+    }
 }
